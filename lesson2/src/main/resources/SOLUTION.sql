@@ -21,9 +21,9 @@ INSERT INTO subject (id, name, description,grade)  VALUES (7, 'Science', 'scienc
 INSERT INTO subject (id, name, description,grade)  VALUES (8, 'IT', 'IT', 4);
 INSERT INTO subject (id, name, description,grade)  VALUES (9, 'Physics', 'physics', 5);
 INSERT INTO subject (id, name, description,grade)  VALUES (10, 'Chemistry', 'chemistry', 5);
-INSERT INTO payment_type (id, name)  VALUES (1, 'DAILY');
-INSERT INTO payment_type (id, name)  VALUES (2, 'WEEKLY');
-INSERT INTO payment_type (id, name)  VALUES (3, 'MONTHLY');
+INSERT INTO paymenttype (id, name)  VALUES (1, 'DAILY');
+INSERT INTO paymenttype (id, name)  VALUES (2, 'WEEKLY');
+INSERT INTO paymenttype (id, name)  VALUES (3, 'MONTHLY');
 INSERT INTO payment (id, type_id, amount, student_id, payment_date)  VALUES (1, 2, 1000, 1, '2022-01-15');
 INSERT INTO payment (id, type_id, amount, student_id, payment_date)  VALUES (2, 3, 1000, 4, '2022-01-15');
 INSERT INTO payment (id, type_id, amount, student_id, payment_date)  VALUES (3, 2, 1000, 7, '2022-01-15');

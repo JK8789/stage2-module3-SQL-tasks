@@ -13,7 +13,7 @@ CREATE TABLE subject (
     grade int
 );
 
-CREATE TABLE payment_type (
+CREATE TABLE paymenttype (
     id bigint NOT NULL PRIMARY KEY,
     name varchar(45)
 );
@@ -24,7 +24,7 @@ CREATE TABLE payment (
     amount decimal,
     student_id bigint,
     payment_date timestamp,
-    FOREIGN KEY (type_id) REFERENCES payment_type (id),
+    FOREIGN KEY (type_id) REFERENCES paymenttype (id),
     FOREIGN KEY (student_id) REFERENCES student (id)
 );
 
